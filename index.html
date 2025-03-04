@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>3-column preview card component</title>
+
+    <style>
+      .big-shoulders {
+        font-family: "Big Shoulders Display", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .lexend-deca {
+        font-family: "Lexend Deca", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body class="bg-[#f0f0f0] py-16 px-5">
+    <main class="flex flex-col items-center justify-center md:items-center md:flex-row">
+      <div
+        class="bg-[hsl(31,77%,52%)] rounded-tl-lg rounded-tr-lg p-10 flex flex-col justify-start items-start gap-7 w-[20rem] h-[25rem] md:rounded-tr-none md:rounded-bl-lg"
+      >
+        <img class="w-[5rem]" src="./images/icon-sedans.svg" alt="" />
+
+        <h2
+          class="text-[hsl(0,0%,95%)] big-shoulders font-bold text-4xl"
+        >
+          SEDANS
+        </h2>
+
+        <p class="text-[hsla(0,0%,100%,0.75)] lexend-deca text-sm font-medium">
+          Choose a sedan for its affordability and excellent fuel economy. Ideal
+          for cruising in the city or on your next road trip.
+        </p>
+        <button class="bg-[hsl(0,0%,95%)] py-3 px-8 lexend-deca rounded-full text-[hsl(31,77%,52%)]">Learn More</button>
+      </div>
+
+      <div class="bg-[hsl(184,100%,22%)] p-10 flex flex-col justify-start items-start gap-7 w-[20rem] h-[25rem]">
+        <img src="./images/icon-luxury.svg" class="w-[5rem]" alt="" />
+        <h2 class="text-[hsl(0,0%,95%)] big-shoulders font-bold text-4xl">LUXURY</h2>
+        <p class="text-[hsla(0,0%,100%,0.75)] lexend-deca text-sm font-medium">
+          Cruise in the best car brands without the bloated prices. Enjoy the
+          enhanced comfort of a luxury rental and arrive in style.
+        </p>
+        <button class="bg-[hsl(0,0%,95%)] py-3 px-8 lexend-deca rounded-full text-[hsl(184,100%,22%)]">Learn More</button>
+      </div>
+
+      <div class="bg-[hsl(179,100%,13%)] p-10 flex flex-col justify-start items-start gap-7 w-[20rem] h-[25rem] rounded-b-lg md:rounded-bl-none md:rounded-tr-lg">
+        <img src="./images/icon-suvs.svg" alt="" />
+        <h2 class="text-[hsl(0,0%,95%)] big-shoulders font-bold text-4xl">SUVS</h2>
+        <p class="text-[hsla(0,0%,100%,0.75)] lexend-deca text-sm font-medium">
+          Take an SUV for its spacious interior, power, and versatility. Perfect
+          for your next family vacation and off-road adventures.
+        </p>
+        <button class="bg-[hsl(0,0%,95%)] py-3 px-8 lexend-deca rounded-full text-[hsl(179,100%,13%)]">Learn More</button>
+      </div>
+    </main>
+  </body>
+</html>
